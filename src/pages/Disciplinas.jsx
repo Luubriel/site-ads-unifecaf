@@ -1,4 +1,6 @@
 import Card from '../components/Card';
+import PageHero from '../components/PageHero';
+import disciplinasBackground from '../assets/backgrounds/coding-background-lyj6ue5tcn1lcb7a-4249621059.jpg';
 
 function Disciplinas() {
   const modulos = [
@@ -30,8 +32,11 @@ function Disciplinas() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-brand-primary mb-4">Matriz Curricular</h2>
-      <p className="text-lg mb-8">Conheça os módulos que formam o nosso currículo prático e atualizado.</p>
+      <PageHero
+        title="Matriz Curricular"
+        subtitle="Conheça os módulos que formam um currículo prático, atualizado e conectado com o desenvolvimento de sistemas."
+        backgroundImage={disciplinasBackground}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {modulos.map((modulo, index) => (

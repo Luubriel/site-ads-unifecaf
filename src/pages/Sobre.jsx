@@ -1,10 +1,15 @@
 import Card from '../components/Card';
+import PageHero from '../components/PageHero';
+import sobreBackground from '../assets/backgrounds/1000_F_960098626_9JqLcELxpSm1DazUybCBql4eGv2LK6ds-3204977162.jpg';
 
 function Sobre() {
   return (
     <div>
-      <h2 className="text-3xl font-bold text-brand-primary mb-4">Sobre o Curso</h2>
-      <p className="text-lg mb-8">Análise e Desenvolvimento de Sistemas é para quem quer transformar código em solução. Uma formação focada em tecnologia atual, para quem quer sair pronto para construir, testar e evoluir sistemas.</p>
+      <PageHero
+        title="Sobre o Curso"
+        subtitle="Análise e Desenvolvimento de Sistemas é para quem quer transformar código em solução, com uma formação focada em tecnologia atual."
+        backgroundImage={sobreBackground}
+      />
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card title="Duração e Formato">

@@ -1,11 +1,16 @@
 import Card from '../components/Card';
+import PageHero from '../components/PageHero';
 import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import contatoBackground from '../assets/backgrounds/coding-background-agabbzkualvrbht8-4123006742.jpg';
 
 function Contato() {
   return (
     <div>
-      <h2 className="text-3xl font-bold text-brand-primary mb-4">Fale Conosco</h2>
-      <p className="text-lg mb-8">Tire suas dúvidas ou venha nos visitar.</p>
+      <PageHero
+        title="Fale Conosco"
+        subtitle="Tire suas dúvidas, fale com a UniFECAF ou venha conhecer a estrutura do curso de ADS."
+        backgroundImage={contatoBackground}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card title="Informações de Contato">

@@ -1,8 +1,10 @@
 import Card from '../components/Card';
+import PageHero from '../components/PageHero';
 import fotoRafael from '../assets/rafael.jpg';
 import fotoGeovane from '../assets/geovane.png';
 import fotoFlavio from '../assets/flavio.jpg';
 import fotoFrancisco from '../assets/francisco.jpg';
+import professoresBackground from '../assets/backgrounds/programming-coding-language_bGhpbm6UmZqaraWkpJRmbmdlrWZlbWU-2122011468.jpg';
 
 function Professores() {
   const professores = [
@@ -34,8 +36,11 @@ function Professores() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-brand-primary mb-4">Corpo Docente</h2>
-      <p className="text-lg mb-8">Nossa equipe de professores altamente capacitados e experientes no mercado de tecnologia:</p>
+      <PageHero
+        title="Corpo Docente"
+        subtitle="Conheça professores com experiência em tecnologia, desenvolvimento web, dados e soluções digitais."
+        backgroundImage={professoresBackground}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {professores.map(prof => (
