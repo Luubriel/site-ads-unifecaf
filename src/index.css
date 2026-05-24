@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-light: #F8F9FA;
+  --color-neutral-dark: #1A202C;
+  --color-support-success: #1DB968;
+  --color-support-error: #E53E3E;
+  --color-support-warning: #ECC94B;
+  --color-brand-primary: #005086;
+  --color-brand-accent: #006BB6;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-light text-neutral-dark font-sans antialiased;
+  }
+}
